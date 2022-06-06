@@ -29,8 +29,13 @@ export default function Dictionary() {
         <form onSubmit={search}>
           <h1>Dictionary</h1>
           <br />
-          <p>What word would you like to look up?</p>
-          <input type="search" onChange={submitKeyword} placeholder="Search" />
+          <input
+            type="search"
+            onChange={submitKeyword}
+            placeholder="What word would you like to look up?"
+          />
+          <br />
+          <button type="submit">Search</button>
         </form>
       </section>
       <Results results={results} />
