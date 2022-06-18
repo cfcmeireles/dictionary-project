@@ -1,13 +1,13 @@
 .Synonyms {
-  margin: 20px;
-  padding-left: 0px;
+  margin-block-start: 20px;
+  padding-inline-start: 20px;
 }
 
 .Synonyms li {
   display: inline-block;
-  padding-right: 35px;
+  padding-inline-end: 35px;
   font-size: 14px;
-  margin-left: -20px;
+  margin-inline-start: -20px;
   font-weight: bolder;
   color: #71797e;
 }
