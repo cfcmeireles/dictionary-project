@@ -22,3 +22,10 @@
     margin-inline-start: -10px;
   }
 }
+
+/* Galaxy fold */
+@media (min-width: 280px) and (max-width: 320px) {
+  .AudioPlayer {
+    display: flex;
+  }
+}
