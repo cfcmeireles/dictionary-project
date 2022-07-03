@@ -1,23 +1,24 @@
-.Phonetic {
-  margin-inline-start: 30px;
-  padding-block-end: 20px;
-  padding-block-start: 20px;
-}
-
-.Phonetic a {
-  border: 1px solid #ddd;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: all 150ms ease-in-out;
+.AudioPlayer {
   padding: 10px 20px;
+  padding-block-end: 20px;
 }
 
-.Phonetic a:hover {
-  background: #f4fafd;
-}
-
-.Phonetic .text {
+.text {
   font-weight: bold;
   color: #71797e;
   padding-inline-start: 10px;
+  padding-block-end: 20px;
+}
+
+.text .listen {
+  font-weight: lighter;
+  font-size: 12px;
+  padding-inline-start: 5px;
+  padding-block-end: 30px;
+}
+
+@media (max-width: 1024px) {
+  .AudioPlayer {
+    margin-inline-start: -10px;
+  }
 }

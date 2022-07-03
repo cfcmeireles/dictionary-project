@@ -46,7 +46,7 @@ export default function Dictionary() {
             type="search"
             onChange={submitKeyword}
             placeholder="Search for a word"
-            class="form-control search-input"
+            className="form-control search-input"
           />
           <br />
           <button type="submit">Search</button>

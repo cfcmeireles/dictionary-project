@@ -15,3 +15,9 @@
   font-weight: lighter;
   font-size: 16px;
 }
+
+@media (max-width: 1024px) {
+  .Meaning {
+    margin-inline: 20px 20px;
+  }
+}

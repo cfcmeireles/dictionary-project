@@ -3,3 +3,9 @@
   margin-inline-start: 30px;
   padding-block-start: 20px;
 }
+
+@media (max-width: 1024px) {
+  .Results h2 {
+    margin-inline-start: 20px;
+  }
+}
