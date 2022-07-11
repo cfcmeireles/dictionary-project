@@ -3,11 +3,18 @@
   padding-block-end: 20px;
 }
 
-.audio-player {
+.text {
   font-weight: bold;
   color: #71797e;
-  padding-inline-start: 30px;
+  padding-inline-start: 10px;
   padding-block-end: 20px;
+}
+
+.text .listen {
+  font-weight: lighter;
+  font-size: 12px;
+  padding-inline-start: 5px;
+  padding-block-end: 30px;
 }
 
 @media (max-width: 1024px) {

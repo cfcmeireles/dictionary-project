@@ -1,24 +1,18 @@
 import React from "react";
+import ReactAudioPlayer from "react-audio-player";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {
-  const audio = new Audio(props.phonetic.audio);
-  const title = props.phonetic.text;
-
-  const start = function () {
-    audio.play();
-  };
-
-  const pause = function () {
-    audio.pause();
-  };
+  const audio = props.phonetic.audio;
 
   return (
-    props.phonetic.audio && (
-      <div className="audio-player">
-        <div className="title">{title}</div>
-        <button onClick={start}>Play</button>
-        <button onClick={pause}>Pause</button>
+    audio && (
+      <div className="AudioPlayer">
+        <div className="text">
+          {props.phonetic.text}
+          <span className="listen"> (Click to listen) </span>
+        </div>
+        <ReactAudioPlayer src={audio} volume={0.5} controls />
       </div>
     )
   );
