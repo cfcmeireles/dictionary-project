@@ -6,7 +6,7 @@ import Pause from "./Pause";
 export default function Phonetic(props) {
   const audioRef = useRef(new Audio(props.phonetic.audio));
   const title = props.phonetic.text;
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(0);
 
   const play = function () {
     setIsPlaying(true);
@@ -16,6 +16,10 @@ export default function Phonetic(props) {
   const pause = function () {
     setIsPlaying(false);
     audioRef.current.pause();
+  };
+
+  audioRef.current.onended = (event) => {
+    return alert("audio ended");
   };
 
   return (
