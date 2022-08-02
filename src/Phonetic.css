@@ -1,24 +1,25 @@
-.AudioPlayer {
-  padding: 10px 20px;
-  padding-block-end: 20px;
-}
-
 .audio-player {
-  font-weight: bold;
-  color: #71797e;
   padding-inline-start: 30px;
   padding-block-end: 20px;
 }
 
-@media (max-width: 1024px) {
-  .AudioPlayer {
-    margin-inline-start: -10px;
-  }
+.title {
+  font-weight: bold;
+  color: #71797e;
 }
 
-/* Galaxy fold */
-@media (min-width: 280px) and (max-width: 320px) {
-  .AudioPlayer {
-    display: flex;
+.play {
+  max-width: 80px;
+}
+
+.title .listen {
+  font-weight: lighter;
+  font-size: 10px;
+  padding-inline-start: 2px;
+}
+
+@media (max-width: 1024px) {
+  .audio-player {
+    margin-inline-start: -10px;
   }
 }

@@ -19,13 +19,17 @@ export default function Phonetic(props) {
   };
 
   audioRef.current.onended = (event) => {
-    return alert("audio ended");
+    event.preventDefault();
+    let currentStatus = isPlaying;
+    setIsPlaying(!currentStatus);
   };
 
   return (
     props.phonetic.audio && (
       <div className="audio-player">
-        <div className="title">{title}</div>
+        <div className="title">
+          {title} <span className="listen">(Click to listen)</span>
+        </div>
         <button className="play" onClick={isPlaying ? pause : play}>
           {isPlaying ? <Pause /> : <Play />}
         </button>
