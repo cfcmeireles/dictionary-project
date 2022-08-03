@@ -19,9 +19,7 @@ export default function Phonetic(props) {
   };
 
   audioRef.current.onended = (event) => {
-    event.preventDefault();
-    let currentStatus = isPlaying;
-    setIsPlaying(!currentStatus);
+    setIsPlaying(false);
   };
 
   return (
